@@ -1,0 +1,314 @@
+.heroContainer {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.heroContainer img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(81, 2, 24, 0.6), rgba(81, 2, 24, 0.6));
+}
+
+.new_button {
+  background-color: #b12929;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: clamp(14px, 2.5vw, 18px);
+  padding: clamp(8px, 1.5vw, 10px) clamp(10px, 2vw, 10px);
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(3px, 0.8vw, 5px);
+  flex-wrap: wrap;
+  min-width: fit-content;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b6a2a2;
+}
+
+.new_button:focus {
+  background-color: #b12929;
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(40px, 8vh, 60px) clamp(15px, 4vw, 20px);
+  min-height: 100vh;
+  color: #fff;
+  gap: clamp(15px, 4vh, 25px);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroContent h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  line-height: 1.3;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.heroContent p {
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  max-width: min(700px, 90vw);
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* Mobile First - Extra Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .heroContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heroContainer img {
+    height: 100vh;
+    min-height: 600px;
+  }
+
+  .heroContent {
+    padding: 30px 15px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heroContent h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .heroContent p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .new_button {
+    font-size: 14px;
+    padding: 8px 12px;
+    gap: 3px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heroContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .heroContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .new_button {
+    font-size: 15px;
+    padding: 9px 13px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .heroContent {
+    padding: 50px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent p {
+    font-size: 1.05rem;
+  }
+
+  .new_button {
+    font-size: 16px;
+    padding: 9px 14px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .heroContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heroContent h1 {
+    font-size: 2.8rem;
+  }
+
+  .heroContent p {
+    font-size: 1.08rem;
+  }
+
+  .new_button {
+    font-size: 17px;
+    padding: 10px 15px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .heroContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .heroContent h1 {
+    font-size: 3rem;
+  }
+
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+
+  .new_button {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+/* Ultra wide screens */
+@media (min-width: 1400px) {
+  .heroContent {
+    padding: 70px 30px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heroContent h1 {
+    font-size: 3.2rem;
+  }
+
+  .heroContent p {
+    font-size: 1.15rem;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-height: 600px) {
+  .heroContent {
+    padding: 20px 15px;
+    gap: 15px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heroContent h1 {
+    font-size: clamp(1.5rem, 4vh, 2.5rem);
+  }
+
+  .heroContent p {
+    font-size: clamp(0.9rem, 2vh, 1rem);
+    line-height: 1.4;
+  }
+
+  .new_button {
+    font-size: clamp(12px, 2vh, 16px);
+    padding: clamp(6px, 1vh, 8px) clamp(8px, 1.5vh, 12px);
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .new_button {
+    box-shadow: inset 3px 3px 8px #bcbcbc, inset -3px -3px 8px #ffffff;
+  }
+
+  .new_button:hover,
+  .new_button:focus {
+    box-shadow: inset 1.5px 1.5px 4px #bcbcbc, inset -1.5px -1.5px 4px #ffffff,
+      1.5px 1.5px 4px #bcbcbc, -1.5px -1.5px 4px #ffffff;
+  }
+}
+
+/* Accessibility - Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .new_button {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .heroContainer {
+    background: white !important;
+    color: black !important;
+  }
+
+  .layer {
+    background: none !important;
+  }
+
+  .heroContent {
+    color: black !important;
+  }
+
+  .new_button {
+    background: white !important;
+    color: black !important;
+    border: 2px solid black !important;
+    box-shadow: none !important;
+  }
+}

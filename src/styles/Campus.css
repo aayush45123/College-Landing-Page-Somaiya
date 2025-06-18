@@ -1,0 +1,68 @@
+.campusContainer {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #f5f7fa;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.new {
+  padding: 10px;
+}
+
+/* .new_button.new {
+  margin: 40px;
+  background-color: #b6a2a2;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: #b6a2a2;
+}
+
+.new_button:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+} */
+
+.new_button:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}

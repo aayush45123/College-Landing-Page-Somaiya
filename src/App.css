@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+}
+
+ .new_button {
+  background-color: #bd2828;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: clamp(14px, 2.5vw, 18px);
+  padding: clamp(8px, 1.5vw, 10px) clamp(10px, 2vw, 10px);
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(3px, 0.8vw, 5px);
+  flex-wrap: wrap;
+  min-width: fit-content;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b6a2a2;
+}
+
+
+
+.new_button:focus {
+  background-color: #bd2828;
+  outline: none;
+
+} 
