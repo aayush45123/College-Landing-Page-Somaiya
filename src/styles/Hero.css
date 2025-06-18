@@ -32,7 +32,7 @@
 .new_button {
   background-color: #b12929;
   border-radius: 50px;
-  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+
   color: #ffffff;
   cursor: pointer;
   font-size: clamp(14px, 2.5vw, 18px);
@@ -56,8 +56,6 @@ a:hover {
 .new_button:focus {
   background-color: #b12929;
   outline: none;
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
-    2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
 }
 
 .heroContent {
